@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-11-2017 a las 01:27:49
+-- Tiempo de generación: 01-12-2017 a las 06:05:40
 -- Versión del servidor: 10.1.28-MariaDB
 -- Versión de PHP: 7.1.11
 
@@ -30,17 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `parameters` (
   `id` int(11) NOT NULL,
-  `name` varchar(20) NOT NULL,
-  `value` int(11) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `speed` int(11) NOT NULL,
+  `score` int(11) NOT NULL,
+  `time` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `parameters`
---
-
-INSERT INTO `parameters` (`id`, `name`, `value`) VALUES
-(1, 'playerSpeed', 50),
-(2, 'scoreValue', 100);
 
 -- --------------------------------------------------------
 
@@ -105,7 +99,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `parameters`
 --
 ALTER TABLE `parameters`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `scores`
@@ -117,7 +111,7 @@ ALTER TABLE `scores`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

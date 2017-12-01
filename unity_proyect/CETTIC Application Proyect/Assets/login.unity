@@ -1230,7 +1230,7 @@ MonoBehaviour:
   username: {fileID: 1982867764}
   password: {fileID: 1154960474}
   privateHash: estoesunapruebaparaCETTIC
-  loginURL: http://localhost/cettic_test/login.php
+  loginURL: http://localhost/cettic_test/game/login.php
 --- !u!114 &1792547934
 MonoBehaviour:
   m_ObjectHideFlags: 0
