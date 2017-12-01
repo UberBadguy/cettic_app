@@ -21,7 +21,7 @@ if(!$username || !$pass) {
         $response["msg"] = "I see you are a heretic, die by the emperor's will";
     } else {
         $SQL = "SELECT * FROM users WHERE username = '" . $username . "'";
-        $result_id = $conn->query($SQL) or die("DATABASE ERROR!");
+        $result_id = $conn->query($SQL) or die("Error de Base de datos!!");
         $total = $result_id->num_rows;
         if($total) {
             $data = $result_id->fetch_array();
